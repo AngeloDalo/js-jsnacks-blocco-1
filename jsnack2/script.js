@@ -8,14 +8,33 @@ const myName = prompt("Inserisci il tuo nome: ");
 let i=0;
 let check = false;
 
-for (i=0; i<=namesList.length; ++i) {
+for (i=0; i<=namesList.length-1; ++i) {
     if (myName.toLowerCase() == namesList[i]) {
         check = true;
     }
 }
 
 if (check == true) {
-    container.innerHTML = "Sei il benvenuto";
+    container.innerHTML = "Sei il benvenuto alla festa del grande Gatsby";
 } else {
-    container.innerHTML ="Il tuo nome non è presente nella lista";
+    container.innerHTML ="Il tuo nome non è presente nella lista della festa del grande Gatsby";
 }
+
+
+/*
+const myName = prompt("Inserisci il tuo nome: ");
+let i=0;
+let check = false;
+
+while (i<=namesList.length-1 && check==false) {
+    if (myName.toLowerCase() == namesList[i]) {
+        check=true;
+    }
+    i=i+1;
+}
+
+if (check == true) {
+    container.innerHTML = "Sei il benvenuto alla festa del grande Gatsby";
+} else {
+    container.innerHTML ="Il tuo nome non è presente nella lista della festa del grande Gatsby";
+}*/
